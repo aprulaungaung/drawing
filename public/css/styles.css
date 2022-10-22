@@ -1,0 +1,48 @@
+body{
+  position: relative;
+  top: 0;
+  left:0;
+  margin: 0;
+  background-color:#C8FFD4;
+  color:#EA047E;
+}
+
+.aung {
+  position: absolute;
+  height: 80px;
+  width: 95px;
+  z-index: -1;
+  top: 10px;
+  opacity: 0.5;
+}
+
+.all-content {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.inner-container {
+  margin: 30px 0;
+}
+
+.input1, .input2, .answer,.cir {
+  position: relative;
+  text-align: right;
+  right: 100px;
+  margin-bottom: 10px;
+}
+
+.button {
+  position: relative;
+  left: 70px;
+}
+
+
+@media (max-width: 500px){
+  .input1, .input2, .answer,.cir {
+    text-align: left;
+    right: 20px;
+  }
+  .button{
+    left:-20px;
+  }
+}

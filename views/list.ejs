@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="row all-content">
+    <img src="images/aung.PNG" class="aung" alt="">
+<h3>  ပုံသဏ္ဍန်မျိုးမျိုး၏ ဧရိယာ/ထုထည်တွက်နည်းများ </h3>
+    <!-- Triangle Section******************************************************************** -->
+
+    <div class="col  col-md-6 col-lg-3 inner-container">
+      <h3>Area of a triangle</h3>
+        <p>  တြိဂံဧရိယာ တွက်နည်း </p>
+
+      <p>Formula: Area = (height * base)/2</p>
+      <form class="" action="/" method="post">
+        <div class="input1">
+          <label for="height">height</label>
+          <input type="text" id="height" name="h" value="" onclick="changeColorV()">
+        </div>
+        <div class="input2">
+          <label for="base">base</label>
+          <input type="text" id="base" name="b" value="" onclick="changeColorB()">
+        </div>
+        <div class="answer">
+          <label for="ansTri">Answer</label>
+          <input type="text" id="ansTri" value="<%= AreaTri %>">
+        </div>
+        <button type="submit" class="button" name="button" value="tri">Calculate</button>
+      </form>
+    </div>
+    <div class="col  col-md-6 col-lg-3 inner-container">
+      <div class="triangle">
+        <canvas id="canvas" width="200" height="200"></canvas>
+      </div>
+    </div>
+
+    <!-- Circle Section*********************************************************************** -->
+
+    <div class="col  col-md-6 col-lg-3 inner-container">
+      <h3>Area of a circle</h3>
+        <p> စက်ဝိုင်း ဧရိယာတွက်နည်း </p>
+
+      <p>Formula: Area = &#960;r<sup>2</sup></p>
+      <form class="" action="/" method="post">
+        <div class="cir">
+          <label for="radius">radius</label>
+          <input type="text" id="radius" name="radius" onclick="changeColorRadi()">
+        </div>
+        <div class="answer">
+          <label for="ansCir">Answer</label>
+          <input type="text" id="ansCir" value="<%= AreaCir %>">
+        </div>
+
+        <button type="submit" class="button" name="button" value="cir">Calculate</button>
+      </form>
+    </div>
+    <div class="col  col-md-6 col-lg-3 inner-container">
+      <div class="circle-container">
+        <canvas id="canvas2" width="200" height="200"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Cylinder Section******************************************************************* -->
+
+  <div class="row all-content">
+    <div class="col  col-md-6 col-lg-3 inner-container">
+      <h3>Volume of a Cylinder</h3>
+        <p> ဆလင်ဒါ ထုထည် တွက်နည်း </p>
+
+      <p>Formula: Volume(V) = &#960;r<sup>2</sup>h</p>
+      <form class="" action="/" method="post">
+        <div class="input1">
+          <label for="heightCy">height(h)</label>
+          <input type="text" id="heightCy" name="hcy" onclick="changeColorCyh()">
+        </div>
+        <div class="input2">
+          <label for="radCy">Radius(r)</label>
+          <input type="text" id="radCy" name="rcy" onclick="changeColorCyR()">
+        </div>
+        <div class="answer">
+          <label for="ansCy">Answer</label>
+          <input type="text" id="ansCy" value="<%= cylinder %>">
+        </div>
+        <button type="submit" class="button" name="button" value="cyl">Calculate</button>
+      </form>
+    </div>
+    <div class="col  col-md-6 col-lg-3 inner-container">
+      <canvas id="canvas3" width="200" height="200"></canvas>
+    </div>
+
+    <!-- Sphere Section***************************************************************************** -->
+
+    <div class="col  col-md-6 col-lg-3 inner-container">
+      <h3>Volume of a Sphere</h3>
+        <p> စက်လုံး ထုထည်တွက်နည်း </p>
+
+      <p>Formula: Volume(V) = 4/3&#960;r<sup>3</sup></p>
+      <form class="" action="/" method="post">
+
+        <div class="input2">
+          <label for="radSp">Radius(r)</label>
+          <input type="text" id="radSp" name="rSp" onclick="changeColorSpR() ">
+        </div>
+        <div class="answer">
+          <label for="ansSp">Answer</label>
+          <input type="text" id="ansSp" value="<%= sphere %>">
+        </div>
+        <button type="submit" class="button" name="button" value="sph">Calculate</button>
+      </form>
+    </div>
+    <div class="col  col-md-6 col-lg-3 inner-container">
+      <canvas id="canvas4" width="200" height="200"></canvas>
+    </div>
+  </div>
+  <div class="row all-content">
+
+    <!-- Cone Section*********************************************************************** -->
+    <div class="col  col-md-6 col-lg-3 inner-container">
+      <h3>Volume of a Cone</h3>
+        <p> ထုချွန် ထုထည် တွက်နည်း </p>
+
+      <p>Formula: Volume = (1/3)&#960;r<sup>2</sup>h</p>
+      <form class="" action="/" method="post">
+        <div class="input1">
+          <label for="hightCon">height(h)</label>
+          <input type="text" id="hightCon" name="hCone"  onclick="changeColorHcone()">
+        </div>
+        <div class="input2">
+          <label for="radCone">Radius(r)</label>
+          <input type="text" id="radCone" name="rCone" onclick="changeColorRcone()">
+        </div>
+        <div class="answer">
+          <label for="ansCone">Answer</label>
+          <input type="text" id="ansCone" value="<%= cone %>">
+        </div>
+        <button type="submit" class="button" name="button" value="cone">Calculate</button>
+      </form>
+    </div>
+    <div class="col  col-md-6 col-lg-3 inner-container">
+      <canvas id="canvas5" width="200" height="200"></canvas>
+    </div>
+
+    <!-- hemiSphere Section***************************************************************** -->
+
+    <div class="col  col-md-6 col-lg-3 inner-container">
+      <h3>Volume of a hemiSphere</h3>
+        <p> စက်လုံးခြမ်း ထုထည်တွက်နည်း</p>
+
+      <p>Formula: Volume(V) = (2/3)&#960;r<sup>3</sup></p>
+      <form class="" action="/" method="post">
+
+        <div class="input2">
+          <label for="radHemiS">Radius(r)</label>
+          <input type="text" id="radHemiS" name="hemiS" onclick="changeColorHemiR() ">
+        </div>
+        <div class="answer">
+          <label for="ansHmi">Answer</label>
+          <input type="text" id="ansHmi" value="<%= hemiSphere %>">
+        </div>
+        <button type="submit" class="button" name="button" value="hemiSphere">Calculate</button>
+      </form>
+    </div>
+    <div class="col  col-md-6 col-lg-3 inner-container">
+      <canvas id="canvas6" width="200" height="200"></canvas>
+    </div>
+  </div>
+
+
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
